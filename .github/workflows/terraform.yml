@@ -2,7 +2,7 @@ name: Mondoo Terraform scan
 on:
   push:
     paths:
-    - 'terraform/main.tf'
+    - 'terraform/*.tf'
 jobs:
   terraform-ci-job:
     runs-on: ubuntu-latest

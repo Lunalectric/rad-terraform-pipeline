@@ -1,4 +1,4 @@
-name: Scan AWS Account
+name: Mondoo AWS Account Scan
 on:
   workflow_run:
     workflows: ["Terraform Test", "Terraform Security Scan"]
@@ -7,7 +7,6 @@ on:
 
 jobs:
   security-scan-aws-account:
-    needs: terraform-ci-job
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

@@ -1,7 +1,7 @@
 name: Scan AWS Account
 on:
   workflow_run:
-    workflows: ["Terraform Security Scan"]
+    workflows: ["Terraform Test", "Terraform Security Scan"]
     types:
       - completed
 

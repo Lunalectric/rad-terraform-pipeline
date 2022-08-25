@@ -6,7 +6,7 @@ on:
       - completed
 
 jobs:
-  terraform-ci-job:
+  mondoo-scan-terraform:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

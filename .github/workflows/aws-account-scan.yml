@@ -6,7 +6,7 @@ on:
       - completed
 
 jobs:
-  security-scan-aws-account:
+  mondoo-scan-aws-account:
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

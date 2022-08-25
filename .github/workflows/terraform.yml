@@ -2,7 +2,7 @@ name: Terraform CI
 on: push
 
 jobs:
-  terraform-ci-job:
+  terraform-fmt:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

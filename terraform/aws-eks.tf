@@ -16,7 +16,7 @@ resource "aws_eks_cluster" "good_example" {
 resource "aws_eks_cluster" "good_example" {
   // other config 
 
-  name = "good_example_cluster"
+  name     = "good_example_cluster"
   role_arn = var.cluster_arn
   encryption_config {
     resources = ["secrets"]
@@ -26,6 +26,6 @@ resource "aws_eks_cluster" "good_example" {
   }
   vpc_config {
     endpoint_public_access = true
-    public_access_cidrs = ["10.2.0.1/8"]
+    public_access_cidrs    = ["10.2.0.1/8"]
   }
 }

@@ -1,6 +1,6 @@
 resource "aws_iam_role_policy" "test_policy" {
-  name = "test_policy"
-  role = aws_iam_role.test_role.id
+  name   = "test_policy"
+  role   = aws_iam_role.test_role.id
   policy = data.aws_iam_policy_document.s3_policy.json
 }
 

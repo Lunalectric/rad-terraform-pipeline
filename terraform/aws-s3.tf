@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "pass_example" {
   bucket = "test_bucket"
-  acl = "private"
+  acl    = "private"
 
   versioning {
     enabled = true
@@ -22,8 +22,8 @@ resource "aws_s3_bucket" "pass_example" {
 resource "aws_s3_bucket_public_access_block" "pass_example" {
   bucket = aws_s3_bucket.pass_example.id
 
-  block_public_policy = true
-  block_public_acls = true
-  ignore_public_acls = true
+  block_public_policy     = true
+  block_public_acls       = true
+  ignore_public_acls      = true
   restrict_public_buckets = true
 }
